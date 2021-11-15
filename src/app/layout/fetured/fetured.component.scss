@@ -2,41 +2,53 @@
 
 .fetured{
     display: flex;
-    position: relative;
     padding-top: 5em;
     padding-bottom: 2em;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    position: relative;
 
-    h4{
-        color: #AE0808;
-        font-size: 0.9em;
-        font-weight: 600;
-        letter-spacing: 0.4em;
-        margin: -0.8em;
-    }
-
-    p{
-        text-align: center;
-        padding: 0em 1em;
-        font-size: 0.9em;
-    }
-
-    h2{
-        font-size: 3em;
-        font-weight: 300;
-        letter-spacing: 0.075em;
-        margin: 0em 0em;
-    }
-
-    .buttons{
+    .text{
         display: flex;
+        flex-direction: column;
         align-items: center;
-        gap: 1em;
+        max-width: 800px;
+
+        h4{
+            color: #AE0808;
+            font-size: 0.9em;
+            font-weight: 600;
+            letter-spacing: 0.4em;
+            margin-bottom: -0.8em;
+        }
+
+        p{
+            text-align: center;
+            padding: 0em 1em;
+            font-size: 0.9em;
+        }
+
+        h2{
+            font-size: 3em;
+            font-weight: 300;
+            letter-spacing: 0.075em;
+            margin: 0em 0em;
+        }
+
+        .buttons{
+            display: flex;
+            align-items: center;
+            gap: 1em;
+        }
+    }
+
+    .picture{
+        display: none;
     }
 }
 
-.fetured::before{
+.fetured::before {
+
+
     content: "";
     position: absolute;
     width: 200px;
@@ -46,4 +58,104 @@
     top: 10%;
     left: -10%;
     z-index: -1;
+}
+
+
+@media only screen and (min-width: 500px){
+    .fetured{
+
+        padding-left: 2em;
+        .text {
+
+            align-items: flex-start;
+            
+            p{
+                text-align: left;
+                padding: 0em;
+            }
+
+            .buttons{
+                align-self: flex-end
+            }
+        }
+    }
+    .fetured::before {
+        top: 40px;
+        left: -60px;
+    }
+
+}
+
+@media only screen and (min-width: 700px){
+    .fetured{
+
+        gap: 2em;
+
+        .picture{
+            display:block;
+            align-self: center;
+            border-radius: 0.45em;
+            height: 200px;
+            margin-right: 1em;
+        }
+    }
+
+}
+
+@media only screen and (min-width: 800px){
+    .fetured{
+
+        gap: 5em;
+
+
+        .picture{
+            height: 250px;
+            border-radius: 1em;
+        }
+    }
+
+}
+
+
+@media only screen and (min-width: 1000px){
+    .fetured{
+
+        gap: 5em;
+
+        .text{
+            p{
+                font-size: 1em;
+            }
+
+            h2{
+                font-size: 4em;
+            }
+        }
+
+        .picture{
+            height: 500px;
+            border-radius: 2em;
+            margin-right: -15em;
+            margin-bottom: -6em;
+        }
+    }
+
+}
+
+
+@media only screen and (min-width: 1200px){
+    .fetured{
+
+        .picture{
+            height: 600px;
+        }
+    }
+
+}
+
+@media only screen and (min-width: 1500px){
+    .fetured{
+        gap: 20vw
+    }
+
 }

@@ -7,9 +7,17 @@ img{
 }
 
 h3{
+    display: flex;
+    align-items: center;
+    height: 50px;
     letter-spacing: 0.11em;
     padding: 0em 2em;
     font-style: italic;
     font-weight: 600;
     margin-bottom: 0em;
+}
+
+
+
+@media only screen and (min-width: 500px){
 }

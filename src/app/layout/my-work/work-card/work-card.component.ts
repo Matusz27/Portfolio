@@ -8,12 +8,12 @@ import { Component, OnInit, Input } from '@angular/core';
 export class WorkCardComponent implements OnInit {
 
   
-  @Input() imagesource!:string
+  @Input() imagesource!:string;
   @Input() type!:number; 
-  @Input() header!:string
-  @Input() content!:string
-  @Input() linkLive!:string
-  @Input() linkCode!:string
+  @Input() header!:string;
+  @Input() content!:string;
+  @Input() linkLive!:string;
+  @Input() linkCode!:string;
 
 
   types = [
