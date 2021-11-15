@@ -1,1 +1,14 @@
-<p>work-card works!</p>
+
+<h4 class = "{{types[type-1].class}}">{{types[type-1].name}}</h4>
+<h2>{{header}}</h2>
+<p>{{content}}</p>
+<div class = "buttons">
+    <app-button-code
+        *ngIf = 'linkCode != ""'
+        [link] = linkCode
+    ></app-button-code>
+    <app-button-live
+        *ngIf = 'linkLive != ""'
+        [link] = linkLive
+    ></app-button-live>
+</div>

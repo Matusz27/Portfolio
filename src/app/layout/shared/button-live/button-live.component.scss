@@ -1,5 +1,7 @@
 
-
+a{
+    text-decoration: none;
+}
 
 button{
     background-color: hsl(0, 91%, 36%);
@@ -12,13 +14,13 @@ button{
     margin: 0em;
     font-size: 0.9em;
     padding: 0.55em;
-    aspect-ratio: 10/1;
+    aspect-ratio: 9/1;
+    
     p{
         margin: 0em;
         font-size: 1rem;
         padding-right: 0.5em;
         font-weight: 300;
         font-family: poppins;
-        
     }
 }

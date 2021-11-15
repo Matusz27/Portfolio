@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import {faChevronRight} from "@fortawesome/free-solid-svg-icons"
 
 @Component({
@@ -7,9 +7,11 @@ import {faChevronRight} from "@fortawesome/free-solid-svg-icons"
   styleUrls: ['./button-live.component.scss']
 })
 export class ButtonLiveComponent implements OnInit {
+  
+  @Input() link!:string
 
-    faChevronRight = faChevronRight;
-
+  faChevronRight = faChevronRight;
+  
 
   constructor() { }
 

@@ -1,1 +1,12 @@
-<p>my-work works!</p>
+<app-work-card
+class ="my-work-card"
+*ngFor="let card of cards"
+[type] = card.type
+[header] = card.header
+[content] = card.content
+[linkCode]= card.linkCode
+[linkLive] = card.linkLive
+
+
+>
+</app-work-card>

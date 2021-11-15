@@ -1,5 +1,7 @@
 <div class="skills">
-    <app-card></app-card>
-    <app-card></app-card>
-    <app-card></app-card>
+    <app-card class = "card" 
+    *ngFor="let item of cards"  
+    [imagesource]="item.imagesource" 
+    [header]="item.header" 
+    [content]="item.content"></app-card>
 </div>

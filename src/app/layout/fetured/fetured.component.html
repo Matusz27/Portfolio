@@ -1,9 +1,15 @@
 <div class="fetured">
-    <h4>Fetured project</h4>
+    <h4>Fetured Project</h4>
     <h2>Pilot Page</h2>
-    <p>Lorem for now</p>
+    <p>
+        This project was build for my Dutch friend, the Live View and the code was santitised from his contact information by his request. The actual page was taken down when
+        he changed the line of work, but was up for few months before that.
+        It’s a static page using HTML and SCSS with addition of ScrollReveal
+        for the scroll animation. And the form was handled by PHP, 
+        it's not included, as it was very simple mail function
+    </p>
     <div class="buttons">
-        <app-button-code></app-button-code>
-        <app-button-live></app-button-live>
+        <app-button-code [link]="linktocode"></app-button-code>
+        <app-button-live [link]="linktowork" ></app-button-live>
     </div>
 </div>

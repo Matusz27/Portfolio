@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import {faGithub} from "@fortawesome/free-brands-svg-icons"
 
 @Component({
   selector: 'app-button-code',
@@ -6,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./button-code.component.scss']
 })
 export class ButtonCodeComponent implements OnInit {
+
+  faGithub = faGithub
+
+  @Input() link!:string
 
   constructor() { }
 
