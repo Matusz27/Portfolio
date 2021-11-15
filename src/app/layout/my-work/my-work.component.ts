@@ -13,7 +13,7 @@ export class MyWorkComponent implements OnInit {
     {imagesource: "./assets/images/eletron.png",type: 1,
     header:"Elektron",
     linkLive:"",linkCode:"https://github.com/Matusz27/Elektron",
-    content:"I still work on this project, but it will be finished soon, it’s a electronics ecommerce platfrom, I created it to learn Angular, Django and REST, currently I got stuck on authentication and authorization, as well as creating the cookie to hold the cart. Currently only the code is alviable to view, as the project is not even the minimum viable product stage."},
+    content:"I still work on this project, but it will be finished soon, it’s a electronics ecommerce platfrom, I created it to learn Angular and rxjs, Django and REST, currently I got stuck on authentication and authorization, as well as creating the cookie to hold the cart. Currently only the code is alviable to view, as the project is not even the minimum viable product stage."},
 
     {imagesource: "./assets/images/wildfriuts.png",type: 3, 
     header:"Wild Friuts",
