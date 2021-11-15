@@ -22,7 +22,7 @@ export class MyWorkComponent implements OnInit {
 
     
     {imagesource: "../../../assets/images/bot.png",type: 3,
-     header:"Discord bots",
+     header:"Celest bot",
      linkLive:"",linkCode:"https://github.com/Matusz27/Celest-bot",
      content:"This project represents all the discord bots I had created. Being the most complex one of them all, using postrgres to store data, and possesing most functions. They are build using python and discord.py library, I had created sevral bots like this in past few years, the most notable one outside of this one would be the School Bot, that was used by my teacher, back at the start of the pandemic to check attendence."},
     
