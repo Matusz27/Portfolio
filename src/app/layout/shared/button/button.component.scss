@@ -5,6 +5,7 @@ a{
 
 button{
     background-color: hsl(0, 91%, 36%);
+    transition: 500ms;
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -24,6 +25,11 @@ button{
         font-family: poppins;
         
     }
+}
+
+button:hover{
+    background-color: white;
+    color: hsl(0, 91%, 36%);
 }
 
 
