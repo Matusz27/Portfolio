@@ -19,7 +19,8 @@ export class WorkCardComponent implements OnInit {
   types = [
     {name:"Unfinished Project", class:"red"},
     {name:"Finished Project", class:"green"},
-    {name:"Continuly developed", class:"blue"}
+    {name:"Continuly developed", class:"blue"},
+    {name:"In Development", class:"yellow"}
 ]
 
   constructor() { }

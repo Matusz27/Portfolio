@@ -10,15 +10,15 @@ export class MyWorkComponent implements OnInit {
 
     cards = [
 
-    {imagesource: "./assets/images/eletron.png",type: 1,
+    {imagesource: "./assets/images/eletron.png",type: 4,
     header:"Elektron",
     linkLive:"",linkCode:"https://github.com/Matusz27/Elektron",
-    content:"I still work on this project, but it will be finished soon, it’s a electronics ecommerce platfrom, I created it to learn Angular and rxjs, Django and REST, currently I got stuck on authentication and authorization, as well as creating the cookie to hold the cart. Currently only the code is alviable to view, as the project is not even the minimum viable product stage."},
+    content:"This project is still developing, it is an electronics ecommerce platfrom. I created it to learn Angular + RxJS, Django + REST using postrgress database, currently Its stuck on authentication and authorization, as well as  the cookies holding the cart and sessions. At the moment only the code is alviable to view, as the project has not reached the minimum viable product stage."},
 
     {imagesource: "./assets/images/wildfriuts.png",type: 3, 
     header:"Wild Friuts",
     linkLive:"https://steamcommunity.com/sharedfiles/filedetails/?id=2618566294",linkCode:"",
-    content:"This project is the most sucesfful modification for game Project Zomboid I made to date, reaching over 5000 subsriptions and over 7000 views and counting, with 50-80 new subscriptions a day taking place on #32 most popular mod in past 3 months, in 40 days I continuely develop it, adding suggestion of user to it, as well as develop new modifications for this game. It uses Lua language for the code part of the modification"},
+    content:"This project is the most sucesful mod for Project Zomboid I made to date, reaching over 5000 subsriptions and over 7000 views and counting, with 50-120 new subscriptions a day, taking #32th place on the most popular mods in past 3 months. I continuely develop it as well as my other mods, adding the suggestion of users to it. It uses Lua language for the code, and json like for defining items."},
 
     
     {imagesource: "./assets/images/bot.png",type: 3,
