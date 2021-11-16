@@ -1,0 +1,17 @@
+[
+    {
+        "imagesource": "./assets/vector_images/angular.svg", 
+        "header":"Frontend Development",
+        "content":"I work with Angular and RxJS to create Front-end applications. I also have little experience with React and Redux, but I put focus on Angular. For styling, I use SCSS. I know vanilla javascript and typescript, often using Greensocks and ScrollReveal libraries for the animation"
+    },
+    {
+        "imagesource": "./assets/vector_images/python.svg", 
+        "header":"Backend Development",
+        "content":"I use Python with Django/Flask libraries. I create REST applications as well as server-rendered web pages. I use PostgresSQL as a database of choice and use MySQL as alternative"
+    },
+    {
+        "imagesource": "./assets/vector_images/Pointer.svg", 
+        "header":"UI/UX Design",
+        "content":"I can create compelling, easy to navigate and good looking experiences. I know design fundamentals I am gaining more experience creating for the users becoming more proficient with Design "
+    }
+]
