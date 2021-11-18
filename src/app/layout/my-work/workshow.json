@@ -6,7 +6,7 @@
         "header":"Elektron",
         "linkLive":"",
         "linkCode":"https://github.com/Matusz27/Elektron",
-        "content":"This project is still in development. It is an electronics e-commerce platform. I created it to learn Angular + RxJS, REST and Django using the Postgres database. Currently, it's stuck on authentication and authorization, as well as the cookies holding the cart and sessions. At the moment, only the code is available to view, as the project has not reached the minimum viable product stage."
+        "content":"This project is still in development. It is an electronics e-commerce platform. I created it to learn Angular + RxJS, REST and Django using the Postgres database. Currently, it's stuck on authentication and authorization, as well as cookies holding the cart and sessions. At the moment, only the code is available to view, as the project has not reached the minimum viable product stage."
     },
     {
         "imagesource": "./assets/images/wildfriuts.png",
