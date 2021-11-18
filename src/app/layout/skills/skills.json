@@ -2,7 +2,7 @@
     {
         "imagesource": "./assets/vector_images/angular.svg", 
         "header":"Frontend Development",
-        "content":"I work with Angular and RxJS to create Front-end applications. I also have little experience with React and Redux, but I put focus on Angular. For styling, I use SCSS. I know vanilla javascript and typescript, often using Greensocks and ScrollReveal libraries for the animation"
+        "content":"I work with Angular and RxJS to create Front-end applications. I additionally have limited experience with React and Redux, putting the focus on Angular. For styling, I use SCSS. I know vanilla javascript and typescript, often using Greensocks and ScrollReveal libraries for the animation."
     },
     {
         "imagesource": "./assets/vector_images/python.svg", 
@@ -12,6 +12,6 @@
     {
         "imagesource": "./assets/vector_images/Pointer.svg", 
         "header":"UI/UX Design",
-        "content":"I can create compelling, easy to navigate and good looking experiences. I know design fundamentals I am gaining more experience creating for the users becoming more proficient with Design "
+        "content":"I can create compelling, easy to navigate and good looking experiences. I know design fundamentals I am gaining more experience creating for the users becoming more proficient with Design"
     }
 ]
