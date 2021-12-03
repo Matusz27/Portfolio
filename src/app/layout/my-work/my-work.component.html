@@ -1,12 +1,19 @@
 
-<app-work-card
-class ="my-work-card"
-*ngFor="let card of cards"
-[type] = card.type
-[imagesource] = card.imagesource
-[header] = card.header
-[content] = card.content
-[linkCode]= card.linkCode
-[linkLive] = card.linkLive
->
-</app-work-card>
+<div class ="my-work-card" *ngFor="let card of cards">
+    <div class="text">
+        <h4 class = "{{types[card.type-1].class}}">{{types[card.type-1].name}}</h4>
+        <h2>{{card.header}}</h2>
+        <p>{{card.content}}</p>
+        <div class = "buttons">
+            <app-button-code
+                *ngIf = 'card.linkCode != ""'
+                [link] = card.linkCode
+            ></app-button-code>
+            <app-button-live
+                *ngIf = 'card.linkLive != ""'
+                [link] = card.linkLive
+            ></app-button-live>
+        </div>
+    </div>
+    <img class = "picture" src={{card.imagesource}} alt = "{{card.header}}">
+</div>

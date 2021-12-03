@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import skills from "./skills.json"
 
 @Component({
   selector: 'app-skills',
@@ -7,9 +6,6 @@ import skills from "./skills.json"
   styleUrls: ['./skills.component.scss']
 })
 export class SkillsComponent implements OnInit {
-
-  public cards:{imagesource:string, header:string, content:string}[] = skills;
-
   constructor() { }
 
   ngOnInit(): void {

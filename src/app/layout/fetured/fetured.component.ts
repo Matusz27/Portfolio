@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { WorkdisplayService } from './../../services/workdisplay.service';
 
 @Component({
   selector: 'app-fetured',
@@ -7,9 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FeturedComponent implements OnInit {
 
-  linktowork = "https://matusz27.github.io/PilotPage/"
-  linktocode = "https://github.com/Matusz27/PilotPage"
-  constructor() { }
+  card = this.workdisplay.getFetured()
+
+  constructor(private workdisplay: WorkdisplayService) { }
 
   ngOnInit(): void {
   }
