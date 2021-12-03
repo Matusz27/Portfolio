@@ -1,5 +1,5 @@
+import { WorkdisplayService } from './../../services/workdisplay.service';
 import { Component, OnInit } from '@angular/core';
-import work from "./workshow.json"
 
 @Component({
   selector: 'app-my-work',
@@ -7,12 +7,19 @@ import work from "./workshow.json"
   styleUrls: ['./my-work.component.scss']
 })
 export class MyWorkComponent implements OnInit {
+  
+  
+  cards = this.workdisplay.getNotFetured()
 
+  types = [
+    {name:"Unfinished Project", class:"red"},
+    {name:"Finished Project", class:"green"},
+    {name:"Continuly developed", class:"blue"},
+    {name:"In Development", class:"yellow"}
+]
 
-  public cards:{imagesource:string, type:number, header:string, 
-    linkLive:string, linkCode:string, content:string}[] = work;
+  constructor(private workdisplay: WorkdisplayService) { }
 
-  constructor() { }
 
   ngOnInit(): void {
   }

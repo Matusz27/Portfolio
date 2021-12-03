@@ -6,7 +6,6 @@ import { HeroComponent } from './layout/hero/hero.component';
 import { ButtonComponent } from './layout/shared/button/button.component';
 import { FeturedComponent } from './layout/fetured/fetured.component';
 import { MyWorkComponent } from './layout/my-work/my-work.component';
-import { WorkCardComponent } from './layout/my-work/work-card/work-card.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { SkillsComponent } from './layout/skills/skills.component';
 
@@ -21,7 +20,6 @@ import { ButtonCodeComponent } from './layout/shared/button-code/button-code.com
     ButtonComponent,
     FeturedComponent,
     MyWorkComponent,
-    WorkCardComponent,
     FooterComponent,
     SkillsComponent,
     ButtonLiveComponent,
