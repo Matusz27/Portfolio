@@ -3,6 +3,7 @@
     {
         "imagesource": "./assets/images/eletron.png",
         "type": 4,
+        "fetured": 0,
         "header":"Elektron",
         "linkLive":"",
         "linkCode":"https://github.com/Matusz27/Elektron",
@@ -10,7 +11,8 @@
     },
     {
         "imagesource": "./assets/images/wildfriuts.png",
-        "type": 3, 
+        "type": 3,
+        "fetured": 0,
         "header":"Wild Friuts",
         "linkLive":"https://steamcommunity.com/sharedfiles/filedetails/?id=2618566294",
         "linkCode":"",
@@ -19,6 +21,7 @@
     {
         "imagesource": "./assets/images/bot.png",
         "type": 3,
+        "fetured": 0,
         "header":"Celest bot",
         "linkLive":"",
         "linkCode":"https://github.com/Matusz27/Celest-bot",
@@ -27,6 +30,7 @@
     {
         "imagesource": "./assets/images/onxy.png",
         "type": 2,
+        "fetured": 0,
         "header":"The Onxy Plane",
         "linkLive":"https://matusz27.github.io/Onxy-Plane/Index.html",
         "linkCode":"https://github.com/Matusz27/Onxy-Plane",
