@@ -35,5 +35,14 @@
         "linkLive":"https://matusz27.github.io/Onxy-Plane/Index.html",
         "linkCode":"https://github.com/Matusz27/Onxy-Plane",
         "content":"This was a smaller project, created on a foundation of a project my friend Preston made that I expanded on, fixed the design, and code errors, completely redone how the details about the towns are displayed and added the animations using GreenSocks, turning the barebones page into a compelling experience."
+    },
+    {
+        "imagesource": "./assets/images/pilotpage.png",
+        "type": 2,
+        "fetured": 1,
+        "header":"Pilot Page",
+        "linkLive":"https://matusz27.github.io/PilotPage/",
+        "linkCode":"https://github.com/Matusz27/PilotPage",
+        "content":"This project was built for a Dutch client.  The Live View and the code were sanitised from his contact information at his request. The actual page has been taken down when he changed the line of work, but was up for a few months. It’s a static page using HTML and SCSS with the addition of ScrollReveal for the scroll animation."
     }
 ]

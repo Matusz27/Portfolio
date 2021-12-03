@@ -1,19 +1,20 @@
-<div class="fetured">
+<div *ngIf = 'card != undefined' class="fetured">
     <div class = "text">
         <h4>Fetured Project</h4>
-        <h2>Pilot Page</h2>
+        <h2>{{card.header}}</h2>
         <p>
-            this project was built for a Dutch client. 
-            The Live View and the code were sanitised from his contact 
-            information at his request. The actual page has been taken 
-            down when he changed the line of work, but was up for a 
-            few months. It’s a static page using HTML and SCSS with 
-            the addition of ScrollReveal for the scroll animation.
+            {{card.content}}
         </p>
         <div class="buttons">
-            <app-button-code [link]="linktocode"></app-button-code>
-            <app-button-live [link]="linktowork" ></app-button-live>
+            <app-button-code 
+                *ngIf = 'card.linkCode != ""' 
+                [link]="card.linkCode">
+            </app-button-code>
+            <app-button-live 
+                *ngIf = 'card.linkLive != ""' 
+                [link]="card.linkLive" >
+            </app-button-live>
         </div>
     </div>
-    <img class = "picture" src="./assets/images/pilotpage.png" alt="pilotpage">
+    <img class = "picture" src={{card.imagesource}} alt={{card.header}}>
 </div>
