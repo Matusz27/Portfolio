@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {faChevronRight} from "@fortawesome/free-solid-svg-icons"
+import {faChevronDown} from "@fortawesome/free-solid-svg-icons"
 
 @Component({
   selector: 'app-button',
@@ -8,7 +8,7 @@ import {faChevronRight} from "@fortawesome/free-solid-svg-icons"
 })
 export class ButtonComponent implements OnInit {
 
-  faChevronRight = faChevronRight;
+  faChevronDown = faChevronDown;
 
   constructor() { }
 
