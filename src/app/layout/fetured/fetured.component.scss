@@ -1,6 +1,6 @@
 
 
-.fetured{
+.featured{
     display: flex;
     padding-top: 5em;
     padding-bottom: 2em;
@@ -46,7 +46,7 @@
     }
 }
 
-.fetured::before {
+.featured::before {
 
 
     content: "";
@@ -62,7 +62,7 @@
 
 
 @media only screen and (min-width: 500px){
-    .fetured{
+    .featured{
 
         padding-left: 2em;
         .text {
@@ -75,11 +75,11 @@
             }
 
             .buttons{
-                align-self: flex-end
+                align-self: flex-start
             }
         }
     }
-    .fetured::before {
+    .featured::before {
         top: 40px;
         left: -60px;
     }
@@ -87,7 +87,7 @@
 }
 
 @media only screen and (min-width: 700px){
-    .fetured{
+    .featured{
 
         gap: 2em;
 
@@ -103,7 +103,7 @@
 }
 
 @media only screen and (min-width: 800px){
-    .fetured{
+    .featured{
 
         gap: 5em;
 
@@ -118,7 +118,7 @@
 
 
 @media only screen and (min-width: 1000px){
-    .fetured{
+    .featured{
 
         gap: 5em;
 
@@ -148,7 +148,7 @@
 
 
 @media only screen and (min-width: 1200px){
-    .fetured{
+    .featured{
 
         .picture{
             height: 600px;
@@ -158,7 +158,7 @@
 }
 
 @media only screen and (min-width: 1500px){
-    .fetured{
+    .featured{
         gap: 20vw
     }
 
