@@ -11,6 +11,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        text-align: center;
         max-width: 800px;
 
         h4{
@@ -90,6 +91,10 @@
     .featured{
 
         gap: 2em;
+        
+        .text{
+            text-align: left;
+        }
 
         .picture{
             display:block;
@@ -123,6 +128,8 @@
         gap: 5em;
 
         .text{
+            max-width: 50%;
+
             p{
                 font-size: 1em;
             }
@@ -137,9 +144,9 @@
         }
 
         .picture{
-            height: 500px;
+            height: 200px;
             border-radius: 2em;
-            margin-right: -15em;
+            margin-right: -10em;
             margin-bottom: -6em;
         }
     }
@@ -151,7 +158,7 @@
     .featured{
 
         .picture{
-            height: 600px;
+            height: 400px;
         }
     }
 
