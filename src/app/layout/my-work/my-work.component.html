@@ -1,18 +1,24 @@
 
-<div class ="my-work-card" *ngFor="let card of cards">
+<div class ="my-work-card" *ngFor="let card of cards; index as i">
     <div class="text">
-        <h4 class = "{{types[card.type-1].class}}">{{types[card.type-1].name}}</h4>
+        <h4 [class] = "types[card.type-1].class">{{types[card.type-1].name}}</h4>
         <h2>{{card.header}}</h2>
-        <p>{{card.content}}</p>
+        <div class="discriptions">
+            <div class="buttons">
+                <button (click) = "changeDisplay(1, i)"  [class.active] = 'selectedOption[i]'>Discription</button>
+                <button (click) = "changeDisplay(2, i)" [class.active] = '!selectedOption[i]'>Technologies</button>
+            </div>
+             <p [hidden] = '!selectedOption[i]'>{{card.content}}</p>
+        </div>
         <div class = "buttons">
-            <app-button-code
-                *ngIf = 'card.linkCode != ""'
-                [link] = card.linkCode
-            ></app-button-code>
             <app-button-live
                 *ngIf = 'card.linkLive != ""'
                 [link] = card.linkLive
             ></app-button-live>
+            <app-button-code
+                *ngIf = 'card.linkCode != ""'
+                [link] = card.linkCode
+            ></app-button-code>
         </div>
     </div>
     <img class = "picture" src={{card.imagesource}} alt = "{{card.header}}">

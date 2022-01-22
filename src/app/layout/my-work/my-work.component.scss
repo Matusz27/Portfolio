@@ -1,8 +1,14 @@
+
+
+
+
+
+
 .my-work-card {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 4em;
+    padding-top: 6em;
 
     .text {
         display: flex;
@@ -14,6 +20,7 @@
             font-weight: 600;
             letter-spacing: 0.4em;
             margin-bottom: -0.8em;
+            
         }
 
         h2 {
@@ -21,18 +28,53 @@
             font-weight: 300;
             letter-spacing: 0.075em;
             margin: 0;
+            text-align: center;
         }
 
-        p {
-            text-align: center;
-            margin-bottom: 1em;
-            padding: 0 1em;
-            font-size: 0.9em;
+        .discriptions{
+
+            background-color: #0C0C0C;
+            padding: 1em;
+            border-radius: 10px;
+            width: 90vw;
+            margin: 1em 0em;
+            transition: 500ms;
+
+            .buttons{
+                    display: flex;
+                    flex-direction: row;
+                    padding-bottom: 1em;
+                    justify-content: center;
+
+                button{
+                    background-color: transparent;
+                    cursor: pointer;
+                    border: none;
+                    color: rgba(255, 255, 255, 0.25);
+                    font-size: 1em;
+                    font-weight: 300;
+                    letter-spacing: 0.2em;
+                    font-style: italic;
+                    
+                }
+
+                .active{
+                    color: white;
+                }
+
+            }
+            
+            p {
+                text-align: center;
+                margin: 0em;
+                font-size: 0.9em;
+            }
+
         }
 
         .buttons {
             display: flex;
-            gap: 2em;
+            gap: 1em;
             align-items: center;
         }
     }
@@ -59,21 +101,6 @@
     }
 }
 
-@media only screen and(min-width: 500px) {
-    .my-work-card {
-        padding-left: 2em;
-
-        .text {
-
-            align-items: flex-start;
-
-            p {
-                text-align: left;
-                padding: 0;
-            }
-        }
-    }
-}
 
 @media only screen and(min-width: 700px) {
 
@@ -81,14 +108,38 @@
         display: flex;
         flex-direction: row;
         gap: 2em;
+        padding-left: 2em;
 
         .picture {
             display: block;
             filter: brightness(50%);
             align-self: center;
             border-radius: 0.45em;
-            height: 200px;
+            height: 250px;
+            border-radius: 1em;
             margin-right: 1em;
+        }
+        
+        .text {
+
+            align-items: flex-start;
+
+            h2{
+                text-align: left;
+            }
+            .discriptions{
+
+                width: 100%;
+
+                 .buttons{
+                    justify-content: start;
+                }
+                
+                p {
+                    text-align: left;
+                    padding: 0;
+                }
+            }
         }
     }
 
@@ -101,55 +152,36 @@
 
 }
 
-@media only screen and(min-width: 800px) {
-    .my-work-card{
-        .picture {
-            height: 250px;
-            border-radius: 1em;
-        }
-    }
-}
-
-
 @media only screen and(min-width: 1000px) {
 
     .my-work-card{
-        margin-right: -18em;
 
         .text {
-            p {
-                font-size: 1em;
-            }
 
             h4 {
                 font-size: 1em;
             }
 
             h2 {
-                font-size: 4em;
+                font-size: 3.5em;
             }
+
+            .discriptions{
+
+                p {
+                    font-size: 1em;
+                }
+            }
+
         }
 
         .picture {
-            height: 500px;
+            height: 350px;
             border-radius: 2em;
         }
     }
 
     .my-work-card:nth-child(2n){
         margin-right: 0em;
-        margin-left: -18em;
     }
 }
-
-
-@media only screen and(min-width: 1200px) {
-
-    .my-work-card{
-        .picture {
-            height: 600px;
-        }
-    }
-}
-
-

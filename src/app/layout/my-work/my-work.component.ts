@@ -9,7 +9,9 @@ import { Component, OnInit } from '@angular/core';
 export class MyWorkComponent implements OnInit {
   
   
-  cards = this.workdisplay.getNotFetured()
+  cards = this.workdisplay.getFetured()
+
+  selectedOption:boolean[] = []
 
   types = [
     {name:"Unfinished Project", class:"red"},
@@ -22,6 +24,17 @@ export class MyWorkComponent implements OnInit {
 
 
   ngOnInit(): void {
+    for(let i = 0; i < this.cards.length; i++){
+      this.selectedOption.push(true) 
+    }
+  }
+
+  changeDisplay(clicked:number, id:number){
+    if (clicked === 1){
+      this.selectedOption[id] = true
+      return
+    }
+    this.selectedOption[id] = false
   }
 
 }
