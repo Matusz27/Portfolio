@@ -21,5 +21,16 @@
             ></app-button-code>
         </div>
     </div>
-    <img class = "picture" src={{card.imagesource}} alt = "{{card.header}}">
+    <div class = "picture">
+        <gallery 
+        id = "gallery{{i}}" 
+        [items]="images[i]"  
+        [imageSize] = "'cover'"
+        [thumb] = false
+        [counter] = false
+        gallerize = {{i}}
+    >
+    </gallery>
+    </div>
+
 </div>

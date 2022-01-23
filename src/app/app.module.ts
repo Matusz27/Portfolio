@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { GalleryModule  } from 'ng-gallery'
+import { LightboxModule  } from 'ng-gallery/lightbox'
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { HeroComponent } from './layout/hero/hero.component';
@@ -27,7 +30,10 @@ import { TestimonialsComponent } from './layout/testimonials/testimonials.compon
   ],
   imports: [
     BrowserModule,
-    FontAwesomeModule
+    GalleryModule,
+    LightboxModule,
+    FontAwesomeModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

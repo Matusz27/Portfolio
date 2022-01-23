@@ -111,22 +111,23 @@
     .my-work-card{
         display: flex;
         flex-direction: row;
-        gap: 2em;
-        padding-left: 2em;
+        gap: 1em;
+        padding-left: 1em;
 
         .picture {
             display: block;
             filter: brightness(50%);
+            cursor: pointer;
             align-self: center;
             border-radius: 0.45em;
-            height: 250px;
+            width: 50%;
             border-radius: 1em;
-            margin-right: 1em;
         }
         
         .text {
 
             align-items: flex-start;
+            width: 50%;
 
             h2{
                 text-align: left;
@@ -156,11 +157,19 @@
 
 }
 
-@media only screen and(min-width: 1000px) {
+@media only screen and(min-width: 1200px) {
 
     .my-work-card{
 
+        justify-content: space-between;
+
+        gap: 2em;
+        padding-left: 2em;
+        padding-right: 2em;
+
         .text {
+
+            max-width: 600px;;
 
             h4 {
                 font-size: 1em;
@@ -171,21 +180,34 @@
             }
 
             .discriptions{
-
-                p {
-                    font-size: 1em;
-                }
+                width: 600px;
             }
 
         }
 
         .picture {
-            height: 350px;
-            border-radius: 2em;
+            border-radius: 1em;
+            width: 45%;
+            height: 500px;
+            max-width: 600px;
         }
     }
 
     .my-work-card:nth-child(2n){
         margin-right: 0em;
+        
+        .text {
+            width: 45%;
+            max-width: 600px;;
+        }
+    }
+}
+
+
+@media only screen and(min-width: 1500px) {
+
+    .my-work-card{
+
+        justify-content: space-around;
     }
 }
