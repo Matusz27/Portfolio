@@ -21,16 +21,14 @@
             ></app-button-code>
         </div>
     </div>
-    <div class = "picture">
-        <gallery 
+    <gallery 
         id = "gallery{{i}}" 
+        class = "picture"
         [items]="images[i]"  
         [imageSize] = "'cover'"
         [thumb] = false
         [counter] = false
-        gallerize = {{i}}
-    >
+        gallerize = {{i}}>
     </gallery>
-    </div>
 
 </div>

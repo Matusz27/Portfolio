@@ -113,20 +113,11 @@
         flex-direction: row;
         gap: 1em;
         padding-left: 1em;
-
-        .picture {
-            display: block;
-            filter: brightness(50%);
-            cursor: pointer;
-            align-self: center;
-            border-radius: 0.45em;
-            width: 50%;
-            border-radius: 1em;
-        }
         
         .text {
 
             align-items: flex-start;
+            padding-bottom: 1em;
             width: 50%;
 
             h2{
@@ -145,6 +136,16 @@
                     padding: 0;
                 }
             }
+        }
+        .picture {
+            display: block;
+            filter: brightness(50%);
+            cursor: pointer;
+            align-self: center;
+            border-radius: 0.45em;
+            width: 50%;
+            border-radius: 1em;
+            height: 360px;
         }
     }
 
@@ -188,7 +189,6 @@
         .picture {
             border-radius: 1em;
             width: 45%;
-            height: 500px;
             max-width: 600px;
         }
     }
