@@ -15,6 +15,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ButtonLiveComponent } from './layout/shared/button-live/button-live.component';
 import { ButtonCodeComponent } from './layout/shared/button-code/button-code.component';
 import { TestimonialsComponent } from './layout/testimonials/testimonials.component';
+import { DiscriptionBoxComponent } from './layout/discription-box/discription-box.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { TestimonialsComponent } from './layout/testimonials/testimonials.compon
     SkillsComponent,
     ButtonLiveComponent,
     ButtonCodeComponent,
-    TestimonialsComponent
+    TestimonialsComponent,
+    DiscriptionBoxComponent
   ],
   imports: [
     BrowserModule,

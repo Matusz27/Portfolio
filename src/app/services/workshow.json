@@ -1,40 +1,44 @@
 
 [
     {
-        "imagesource": ["./assets/images/wishlist2.png","./assets/images/wishlist.png"],
+        "imagesource": ["./assets/images/wishlist2.png", "./assets/images/wishlistload.png","./assets/images/wishlist.png"],
         "type": 2,
         "fetured": 1,
         "header":"Wishlist Analyser",
         "linkLive":"https://steamwislistanaliser.pages.dev/",
         "linkCode":"https://github.com/Matusz27/wishlist",
-        "content":"My biggest project so far, allowing users to analyse their entire steam wishlist with one click. Displaying the price, the most recuring tags, as well as showing interesting data points on charts. Currently broken because I struggle with setting up a proxy"
+        "content":"This is my biggest Angular project to date. It allows users to analyse their entire steam wishlist with just one click. Displaying the prices, the most recurring tags, and depicting data on charts. Currently, non-functioning and only showing filler data, because of a struggle with the deployment of the backend",
+        "tech": ["Angular", "Typescript", "SCSS", "REST", "HTML5", "Angular Forms", "Font Awesome", "ngx-Chart"]
     },
     {
-        "imagesource": ["./assets/images/pilotpage.png"],
+        "imagesource": ["./assets/images/pilotpage.png","./assets/images/pilot4.png","./assets/images/pilot2.png","./assets/images/pilot3.png"],
         "type": 2,
         "fetured": 1,
         "header":"Pilot Page",
         "linkLive":"https://matusz27.github.io/PilotPage/",
         "linkCode":"https://github.com/Matusz27/PilotPage",
-        "content":"This project was built for a Dutch client.  The Live View and the code were sanitised from his contact information at his request. The actual page has been taken down when he changed the line of work, but was up for a few months. It’s a static page using HTML and SCSS with the addition of ScrollReveal for the scroll animation."
-    },
-        {
-        "imagesource":[ "./assets/images/onxy.png"],
-        "type": 2,
-        "fetured": 1,
-        "header":"Server List",
-        "linkLive":"",
-        "linkCode":"https://github.com/Matusz27/Serverlist",
-        "content":""
-    },
+        "content":"This was a contact page for a Dutch client and their business. I removed the contact information per their request in the presentation. The actual page is no longer available as the client had changed their line of work. It’s a static page that uses HTML and SCSS with the addition of ScrollReveal for the scroll animation.",
+        "tech":  ["Javascript", "SCSS", "HTML5", "ScrollReveal", "PHP"]
+    },    
     {
-        "imagesource": ["./assets/images/onxy.png"],
+        "imagesource":["./assets/images/onxymain.png","./assets/images/Onxydall.png", "./assets/images/onxy.png"],
         "type": 2,
         "fetured": 1,
         "header":"The Onxy Plane",
         "linkLive":"https://matusz27.github.io/Onxy-Plane/Index.html",
         "linkCode":"https://github.com/Matusz27/Onxy-Plane",
-        "content":"This was a smaller project, created on a foundation of a project my friend Preston made that I expanded on, fixed the design, and code errors, completely redone how the details about the towns are displayed and added the animations using GreenSocks, turning the barebones page into a compelling experience."
+        "content":"This was a smaller project, created on a foundation of a project my friend Preston made that I expanded on, fixed the design, and code errors, completely redone how the details about the towns are displayed and added the animations using GreenSocks, turning the barebones page into a compelling experience.",
+        "tech": []
+    },
+    {
+        "imagesource":[""],
+        "type": 2,
+        "fetured": 1,
+        "header":"Server List",
+        "linkLive":"",
+        "linkCode":"",
+        "content":"",
+        "tech": []
     },
     {
         "imagesource": ["./assets/images/wildfriuts.png"],
@@ -43,7 +47,8 @@
         "header":"Wild Friuts",
         "linkLive":"https://steamcommunity.com/sharedfiles/filedetails/?id=2618566294",
         "linkCode":"",
-        "content":"This project is the most successful mod for Project Zomboid I made to date, reaching over 5000 subscriptions and over 7000 views and counting, with 50-120 new subscriptions a day, taking #32nd place on the most popular mods in the past three months. I continuously develop it as well as my other mods, adding the suggestion of users to it. It uses Lua language and JSON like for defining items."
+        "content":"This project is the most successful mod for Project Zomboid I made to date, reaching over 5000 subscriptions and over 7000 views and counting, with 50-120 new subscriptions a day, taking #32nd place on the most popular mods in the past three months. I continuously develop it as well as my other mods, adding the suggestion of users to it. It uses Lua language and JSON like for defining items.",
+        "tech": []
     },
     {
         "imagesource": ["./assets/images/bot.png"],
@@ -52,7 +57,8 @@
         "header":"Celest bot",
         "linkLive":"",
         "linkCode":"https://github.com/Matusz27/Celest-bot",
-        "content":"This project represents all of my discord bots. This project is the most complex and well developed, using Postgres to store data and is modular. I made them using python and discord.py library. I built several bots like this in the past few years. The most notable one would be the School Bot, which was used by my teacher back at the start of the pandemic to check attendance."
+        "content":"This project represents all of my discord bots. This project is the most complex and well developed, using Postgres to store data and is modular. I made them using python and discord.py library. I built several bots like this in the past few years. The most notable one would be the School Bot, which was used by my teacher back at the start of the pandemic to check attendance.",
+        "tech": []
     },
     {
         "imagesource": ["./assets/images/eletron.png"],
@@ -61,6 +67,7 @@
         "header":"Elektron",
         "linkLive":"",
         "linkCode":"https://github.com/Matusz27/Elektron",
-        "content":"This project is still in development. It is an electronics e-commerce platform. I created it to learn Angular + RxJS, REST and Django using the Postgres database. Currently, it's stuck on authentication and authorization, as well as cookies holding the cart and sessions. At the moment, only the code is available to view, as the project has not reached the minimum viable product stage."
+        "content":"This project is still in development. It is an electronics e-commerce platform. I created it to learn Angular + RxJS, REST and Django using the Postgres database. Currently, it's stuck on authentication and authorization, as well as cookies holding the cart and sessions. At the moment, only the code is available to view, as the project has not reached the minimum viable product stage.",
+        "tech": []
     }
 ]

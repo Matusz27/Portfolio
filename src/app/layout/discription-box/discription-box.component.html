@@ -1,0 +1,10 @@
+<div class="discriptions">
+    <div class="buttons">
+        <button (click) = "changeDisplay(1)"  [class.active] = 'selectedOption'>Discription</button>
+        <button (click) = "changeDisplay(2)" [class.active] = '!selectedOption'>Technologies</button>
+    </div>
+        <p [hidden] = '!selectedOption'> {{card.content}}</p>
+        <ul [hidden] = 'selectedOption'>
+            <li *ngFor = "let tech of card.tech">{{tech}}</li>
+        </ul>
+</div>

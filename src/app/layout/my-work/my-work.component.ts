@@ -12,8 +12,6 @@ export class MyWorkComponent implements OnInit {
   
   cards = this.workdisplay.getFetured()
 
-  selectedOption:boolean[] = []
-
   images:GalleryItem[][] = []
 
   types = [
@@ -28,25 +26,14 @@ export class MyWorkComponent implements OnInit {
 
   ngOnInit(): void {
     for(let i = 0; i < this.cards.length; i++){
-      this.selectedOption.push(true) 
       this.images.push(getImages(this.cards[i].imagesource))
     }
   }
-
-  changeDisplay(clicked:number, id:number){
-    if (clicked === 1){
-      this.selectedOption[id] = true
-      return
-    }
-    this.selectedOption[id] = false
-  }
-
 }
 
 function getImages(images:any){
   let imagesOut:any[] = []
   images.forEach((image:string) => {
-    
     imagesOut.push(new ImageItem({src:image, thumb:image}))
   });
   return imagesOut

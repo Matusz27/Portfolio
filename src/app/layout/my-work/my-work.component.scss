@@ -31,51 +31,6 @@
             text-align: center;
         }
 
-        .discriptions{
-
-            display: flex;
-            flex-direction: column;
-            background-color: #0C0C0C;
-            padding: 1em;
-            border-radius: 10px;
-            width: 90vw;
-            min-height: 200px;
-            margin: 1em 0em;
-            transition: 500ms;
-
-            .buttons{
-                    display: flex;
-                    flex-direction: row;
-                    padding-bottom: 1em;
-                    justify-content: center;
-
-                button{
-                    background-color: transparent;
-                    cursor: pointer;
-                    border: none;
-                    transition: 200ms;
-                    color: rgba(255, 255, 255, 0.25);
-                    font-size: 1em;
-                    font-weight: 300;
-                    letter-spacing: 0.2em;
-                    font-style: italic;
-                    
-                }
-
-                .active{
-                    color: white;
-                }
-
-            }
-            
-            p {
-                text-align: center;
-                margin: 0em;
-                font-size: 0.9em;
-            }
-
-        }
-
         .buttons {
             display: flex;
             gap: 1em;
@@ -123,23 +78,14 @@
             h2{
                 text-align: left;
             }
-            .discriptions{
 
+            .discriptions {
                 width: 100%;
-
-                 .buttons{
-                    justify-content: start;
-                }
-                
-                p {
-                    text-align: left;
-                    padding: 0;
-                }
             }
         }
         .picture {
             display: block;
-            filter: brightness(50%);
+            filter: brightness(60%);
             cursor: pointer;
             align-self: center;
             border-radius: 0.45em;
@@ -178,10 +124,6 @@
 
             h2 {
                 font-size: 3.5em;
-            }
-
-            .discriptions{
-                width: 600px;
             }
 
         }

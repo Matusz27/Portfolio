@@ -3,13 +3,7 @@
     <div class="text">
         <h4 [class] = "types[card.type-1].class">{{types[card.type-1].name}}</h4>
         <h2>{{card.header}}</h2>
-        <div class="discriptions">
-            <div class="buttons">
-                <button (click) = "changeDisplay(1, i)"  [class.active] = 'selectedOption[i]'>Discription</button>
-                <button (click) = "changeDisplay(2, i)" [class.active] = '!selectedOption[i]'>Technologies</button>
-            </div>
-             <p [hidden] = '!selectedOption[i]'>{{card.content}}</p>
-        </div>
+        <app-discription-box class = "discriptions" [card] = card></app-discription-box>
         <div class = "buttons">
             <app-button-live
                 *ngIf = 'card.linkLive != ""'
