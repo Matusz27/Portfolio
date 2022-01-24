@@ -1,0 +1,44 @@
+
+
+
+
+
+.refs {
+
+    background-color: hsl(0, 0%, 5%);
+    padding: 2em;
+    margin-top: 5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .card {
+        background-color: hsl(0, 0%, 7%);
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 40px;
+        text-align: center;
+        max-width: 300px;
+
+    }
+
+}
+
+@media only screen and(min-width: 800px) {
+    .refs {
+        gap: 2em;
+
+        .card {
+            height: 500px;
+        }
+    }
+}
+
+
+@media only screen and(min-width: 1000px) {
+    .refs {
+        padding-top: 10em;
+    }
+}

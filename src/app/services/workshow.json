@@ -18,7 +18,7 @@
         "linkLive":"https://matusz27.github.io/PilotPage/",
         "linkCode":"https://github.com/Matusz27/PilotPage",
         "content":"This was a contact page for a Dutch client and their business. I removed the contact information per their request in the presentation. The actual page is no longer available as the client had changed their line of work. It’s a static page that uses HTML and SCSS with the addition of ScrollReveal for the scroll animation.",
-        "tech":  ["Javascript", "SCSS", "HTML5", "ScrollReveal", "PHP"]
+        "tech":  ["Javascript", "CSS", "HTML5", "ScrollReveal", "PHP"]
     },    
     {
         "imagesource":["./assets/images/onxymain.png","./assets/images/Onxydall.png", "./assets/images/onxy.png"],
@@ -27,18 +27,18 @@
         "header":"The Onxy Plane",
         "linkLive":"https://matusz27.github.io/Onxy-Plane/Index.html",
         "linkCode":"https://github.com/Matusz27/Onxy-Plane",
-        "content":"This was a smaller project, created on a foundation of a project my friend Preston made that I expanded on, fixed the design, and code errors, completely redone how the details about the towns are displayed and added the animations using GreenSocks, turning the barebones page into a compelling experience.",
-        "tech": []
+        "content":"It was a smaller project created on top of a foundation that was a school project of my friend Preston. I redesigned it, patched up the errors and expanded on the idea. Starting with the redesign of how the towns are displayed, fixing the little map markers, and animating it all using GreenSocks, turning the barebones idea into a compelling experience.",
+        "tech": ["Javascript", "SCSS", "HTML5", "GreenSocks"]
     },
     {
-        "imagesource":[""],
+        "imagesource":["./assets/images/serverlist/server6.png","./assets/images/serverlist/server1.png","./assets/images/serverlist/server2.png","./assets/images/serverlist/server3.png","./assets/images/serverlist/server4.png","./assets/images/serverlist/server5.png"],
         "type": 2,
         "fetured": 1,
         "header":"Server List",
         "linkLive":"",
-        "linkCode":"",
-        "content":"",
-        "tech": []
+        "linkCode":"https://github.com/Matusz27/Serverlist",
+        "content":"This is my oldest major project built on a modified Colorlib template. It was a static page using Flask for the backend, it was created a week before the release of the game DeadMatter a place where people could easily find game servers and rank them, but because we weren't able to secure the .com domain we were pushed out of the market with the page shutting down two weeks after it had been out, still growing to 12 users before the shutdown. ",
+        "tech": ["HTML5", "Javascript", "JQuery", "Bootstrap", "Python", "Flask", "SQL", "PIllow","wtfForms"]
     },
     {
         "imagesource": ["./assets/images/wildfriuts.png"],
