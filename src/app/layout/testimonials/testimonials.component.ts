@@ -1,5 +1,6 @@
+import { TestimonialsService } from './../../services/testimonials.service';
 import { Component, OnInit } from '@angular/core';
-import {faQuoteRight} from "@fortawesome/free-solid-svg-icons"
+import {faStar} from "@fortawesome/free-solid-svg-icons"
 
 @Component({
   selector: 'app-testimonials',
@@ -8,11 +9,14 @@ import {faQuoteRight} from "@fortawesome/free-solid-svg-icons"
 })
 export class TestimonialsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private TestiService: TestimonialsService) {}
 
-  faQuoteRight = faQuoteRight
+  faStar = faStar
+
+  testimonials = this.TestiService.getestimonials()
 
   ngOnInit(): void {
+    
   }
 
 }

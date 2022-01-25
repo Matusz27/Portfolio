@@ -17,7 +17,7 @@
         "header":"Pilot Page",
         "linkLive":"https://matusz27.github.io/PilotPage/",
         "linkCode":"https://github.com/Matusz27/PilotPage",
-        "content":"This was a contact page for a Dutch client and their business. I removed the contact information per their request in the presentation. The actual page is no longer available as the client had changed their line of work. It’s a static page that uses HTML and SCSS with the addition of ScrollReveal for the scroll animation.",
+        "content":"This was a contact page for a Dutch client and their business. I removed the contact information per their request in the presentation. The actual page is no longer available as the client had changed their line of work. It’s a static page that uses HTML and CSS with the addition of ScrollReveal for the scroll animation.",
         "tech":  ["Javascript", "CSS", "HTML5", "ScrollReveal", "PHP"]
     },    
     {

@@ -1,5 +1,23 @@
 
 
 <div class="refs">
+    
     <h1>Testimonials</h1>
+
+    <div class="cards">
+        <div class="card" *ngFor = "let card of testimonials">
+            <span class = "intreduction">{{card.author}} - {{card.occupation}}</span>
+            <span class = "firm">{{card.firm}}</span>
+            <span class = "stars">
+                <fa-icon [icon] = "faStar" class ="icon"></fa-icon>
+                <fa-icon [icon] = "faStar" class ="icon"></fa-icon>
+                <fa-icon [icon] = "faStar" class ="icon"></fa-icon>
+                <fa-icon [icon] = "faStar" class ="icon"></fa-icon>
+                <fa-icon [icon] = "faStar" class ="icon"></fa-icon>
+            </span>
+            <p>"{{card.content}}"</p>
+            <p [hidden] = true>{{card.traslation}}</p>
+        </div>
+    </div>
+
 </div>

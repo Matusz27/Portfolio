@@ -6,39 +6,103 @@
 .refs {
 
     background-color: hsl(0, 0%, 5%);
-    padding: 2em;
     margin-top: 5em;
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    .card {
-        background-color: hsl(0, 0%, 7%);
-        padding: 1em;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        border-radius: 40px;
-        text-align: center;
-        max-width: 300px;
-
+    h1{
+        font-size: 3em;
+        font-weight: 300;
+        font-style: italic;
     }
+
+    .cards{
+
+        .card {
+            
+            background-color: hsl(0, 0%, 7%);
+            padding: 1em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            border-radius: 10px;
+            text-align: center;
+            width: 90vw;
+            max-width: 550px;
+            margin-bottom: 4em;
+
+            .intreduction{
+                font-size: 1.25em;
+                font-weight: 500;
+            }
+
+            .firm{
+                font-weight: 300;
+            }
+
+            .stars{
+
+                font-size: 1.2em;
+
+                .icon{
+                    padding: 0.1em;
+                    color: #af0808;
+                }
+            }
+
+            p{
+                margin: 0em;
+                font-size: 0.9em;
+            }
+    }
+    }
+
+
 
 }
 
-@media only screen and(min-width: 800px) {
+@media only screen and(min-width: 700px) {
     .refs {
-        gap: 2em;
 
-        .card {
-            height: 500px;
+        h1{
+            font-size: 4em;
+        }
+
+        .cards{
+            
+            .card{
+                align-items: flex-start;
+                text-align: left;
+                padding: 1.5em 2em;
+            }
         }
     }
 }
 
 
-@media only screen and(min-width: 1000px) {
+@media only screen and(min-width: 1200px) {
     .refs {
-        padding-top: 10em;
+
+        padding-bottom: 5em;
+
+        h1{
+            font-size: 5em;
+        }
+
+        .cards{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2em;
+
+            .card{
+                flex: 50%;
+                margin-bottom: 0em;
+            }
+        }
     }
 }
+
+

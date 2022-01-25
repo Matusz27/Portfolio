@@ -4,16 +4,20 @@ import testi from "./testimonials.json"
 @Injectable({
   providedIn: 'root'
 })
+
 export class TestimonialsService {
 
   constructor() { }
 
   public cards:{
-    name:number, 
-    postion:boolean, 
-    content:string}[] = testi;
+    content:string,
+    traslation:string, 
+    author:string, 
+    occupation:string,
+    firm:string
+    }[] = testi;
 
-  getFetured(){
+  getestimonials(){
     return this.cards
   }
 }
