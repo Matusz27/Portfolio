@@ -1,8 +1,14 @@
+
+
+
+
+
+
 .my-work-card {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 4em;
+    padding-top: 6em;
 
     .text {
         display: flex;
@@ -14,6 +20,7 @@
             font-weight: 600;
             letter-spacing: 0.4em;
             margin-bottom: -0.8em;
+            
         }
 
         h2 {
@@ -21,18 +28,12 @@
             font-weight: 300;
             letter-spacing: 0.075em;
             margin: 0;
-        }
-
-        p {
             text-align: center;
-            margin-bottom: 1em;
-            padding: 0 1em;
-            font-size: 0.9em;
         }
 
         .buttons {
             display: flex;
-            gap: 2em;
+            gap: 1em;
             align-items: center;
         }
     }
@@ -59,36 +60,38 @@
     }
 }
 
-@media only screen and(min-width: 500px) {
-    .my-work-card {
-        padding-left: 2em;
-
-        .text {
-
-            align-items: flex-start;
-
-            p {
-                text-align: left;
-                padding: 0;
-            }
-        }
-    }
-}
 
 @media only screen and(min-width: 700px) {
 
     .my-work-card{
         display: flex;
         flex-direction: row;
-        gap: 2em;
+        gap: 1em;
+        padding-left: 1em;
+        
+        .text {
 
+            align-items: flex-start;
+            padding-bottom: 1em;
+            width: 50%;
+
+            h2{
+                text-align: left;
+            }
+
+            .discriptions {
+                width: 100%;
+            }
+        }
         .picture {
             display: block;
-            filter: brightness(50%);
+            filter: brightness(60%);
+            cursor: pointer;
             align-self: center;
             border-radius: 0.45em;
-            height: 200px;
-            margin-right: 1em;
+            width: 50%;
+            border-radius: 1em;
+            height: 360px;
         }
     }
 
@@ -101,55 +104,52 @@
 
 }
 
-@media only screen and(min-width: 800px) {
-    .my-work-card{
-        .picture {
-            height: 250px;
-            border-radius: 1em;
-        }
-    }
-}
-
-
-@media only screen and(min-width: 1000px) {
+@media only screen and(min-width: 1200px) {
 
     .my-work-card{
-        margin-right: -18em;
+
+        justify-content: space-between;
+
+        gap: 2em;
+        padding-left: 2em;
+        padding-right: 2em;
 
         .text {
-            p {
-                font-size: 1em;
-            }
+
+            max-width: 600px;;
 
             h4 {
                 font-size: 1em;
             }
 
             h2 {
-                font-size: 4em;
+                font-size: 3.5em;
             }
+
         }
 
         .picture {
-            height: 500px;
-            border-radius: 2em;
+            border-radius: 1em;
+            width: 45%;
+            max-width: 600px;
         }
     }
 
     .my-work-card:nth-child(2n){
         margin-right: 0em;
-        margin-left: -18em;
-    }
-}
-
-
-@media only screen and(min-width: 1200px) {
-
-    .my-work-card{
-        .picture {
-            height: 600px;
+        
+        .text {
+            width: 45%;
+            max-width: 600px;;
         }
     }
 }
 
 
+@media only screen and(min-width: 1500px) {
+
+    .my-work-card{
+
+        justify-content: space-around;
+    }
+}

@@ -9,8 +9,6 @@ export class ButtonLiveComponent implements OnInit {
   
   @Input() link!:string
 
-  
-
   constructor() { }
 
   ngOnInit(): void {

@@ -1,5 +1,6 @@
 import { WorkdisplayService } from './../../services/workdisplay.service';
 import { Component, OnInit } from '@angular/core';
+import { GalleryItem, ImageItem } from 'ng-gallery';
 
 @Component({
   selector: 'app-my-work',
@@ -9,7 +10,9 @@ import { Component, OnInit } from '@angular/core';
 export class MyWorkComponent implements OnInit {
   
   
-  cards = this.workdisplay.getNotFetured()
+  cards = this.workdisplay.getFetured()
+
+  images:GalleryItem[][] = []
 
   types = [
     {name:"Unfinished Project", class:"red"},
@@ -22,6 +25,16 @@ export class MyWorkComponent implements OnInit {
 
 
   ngOnInit(): void {
+    for(let i = 0; i < this.cards.length; i++){
+      this.images.push(getImages(this.cards[i].imagesource))
+    }
   }
+}
 
+function getImages(images:any){
+  let imagesOut:any[] = []
+  images.forEach((image:string) => {
+    imagesOut.push(new ImageItem({src:image, thumb:image}))
+  });
+  return imagesOut
 }

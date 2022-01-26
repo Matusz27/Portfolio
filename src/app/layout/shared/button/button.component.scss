@@ -5,6 +5,7 @@ a{
 
 button{
     background-color: hsl(0, 91%, 36%);
+    box-shadow: -2px 2px 4px hsla(0, 91%, 18%, 0.774);
     transition: 500ms;
     display: flex;
     align-items: center;
@@ -29,6 +30,7 @@ button{
 
 button:hover{
     background-color: white;
+    box-shadow: -2px 2px 4px hsla(0, 0%, 0%, 0.473);
     color: hsl(0, 91%, 36%);
 }
 
