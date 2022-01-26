@@ -6,7 +6,10 @@
 
     <div class="cards">
         <div class="card" *ngFor = "let card of testimonials">
-            <span class = "intreduction">{{card.author}} - {{card.occupation}}</span>
+            <span class = "intreduction">
+                {{card.author}} 
+                <span *ngIf = "card.occupation != ''"> - {{card.occupation}}</span>
+            </span>
             <span class = "firm">{{card.firm}}</span>
             <span class = "stars">
                 <fa-icon [icon] = "faStar" class ="icon"></fa-icon>
